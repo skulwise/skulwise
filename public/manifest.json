@@ -1,0 +1,29 @@
+{
+  "name": "Skulwise - AI-Powered Learning",
+  "short_name": "Skulwise",
+  "description": "Built for African Students. Powered by AI.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F7FA",
+  "theme_color": "#0059C2",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/skulwise-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/skulwise-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}
