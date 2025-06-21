@@ -88,6 +88,46 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Why Skulwise? Section */}
+      <section className="container mx-auto px-4 py-16">
+        <h2 className="text-3xl font-bold text-white text-center mb-12 font-['Poppins']">
+          Why Choose Skulwise Over Others?
+        </h2>
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-left hover:bg-white/10 transition-all duration-300">
+            <h3 className="text-xl font-bold text-white mb-4 font-['Poppins']">Tailored for African Students</h3>
+            <p className="text-white/80 font-['Nunito']">
+              Unlike generic AI tools, Skulwise is built from the ground up with the unique academic needs and cultural
+              context of African students in mind. From local accents in audio notes to past questions from African
+              universities, we understand your journey.
+            </p>
+          </Card>
+          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-left hover:bg-white/10 transition-all duration-300">
+            <h3 className="text-xl font-bold text-white mb-4 font-['Poppins']">Engaging & Gamified Learning</h3>
+            <p className="text-white/80 font-['Nunito']">
+              We go beyond simple summarization. Skulwise transforms passive learning into an active, rewarding
+              experience with gamified study plans, XP points, and competitive leaderboards, making studying fun and
+              motivating.
+            </p>
+          </Card>
+          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-left hover:bg-white/10 transition-all duration-300">
+            <h3 className="text-xl font-bold text-white mb-4 font-['Poppins']">Comprehensive Study Ecosystem</h3>
+            <p className="text-white/80 font-['Nunito']">
+              Skulwise offers a holistic approach to studying, combining AI-powered note conversion to audio, past
+              question solutions, and personalized study plans all in one platform. No need for multiple tools –
+              everything you need is here.
+            </p>
+          </Card>
+          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-left hover:bg-white/10 transition-all duration-300">
+            <h3 className="text-xl font-bold text-white mb-4 font-['Poppins']">Community & Competition</h3>
+            <p className="text-white/80 font-['Nunito']">
+              Connect with a vibrant community of African students. Compete, collaborate, and grow together, fostering a
+              supportive environment that drives academic excellence.
+            </p>
+          </Card>
+        </div>
+      </section>
+
       {/* Student Illustrations Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="bg-white/5 border border-white/10 rounded-2xl p-10 text-center">
