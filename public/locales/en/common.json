@@ -1,0 +1,17 @@
+{
+  "app_name": "Skulwise",
+  "tagline": "AI-Powered Study Tools",
+  "loading": "Loading...",
+  "save": "Save",
+  "cancel": "Cancel",
+  "upload": "Upload",
+  "search": "Search",
+  "home": "Home",
+  "dashboard": "Dashboard",
+  "flashcards": "Flashcards",
+  "rewards": "Rewards",
+  "level": "Level",
+  "xp": "XP",
+  "points": "Points",
+  "progress": "Progress"
+}
