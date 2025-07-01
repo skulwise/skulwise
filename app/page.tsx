@@ -1,167 +1,112 @@
-import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { BookOpen, Headphones, Trophy, Brain, Users, Zap } from "lucide-react"
 
-export default function LandingPage() {
+export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0059C2] via-[#0A2D58] to-[#0059C2]">
-      {/* Navigation */}
-      <nav className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <div className="flex items-center space-x-3">
-          <Image src="/skulwise-logo.png" alt="Skulwise Logo" width={50} height={50} className="rounded-lg" />
-          <span className="text-white font-bold text-xl font-['Montserrat']">Skulwise</span>
-        </div>
-        <div className="hidden md:flex space-x-6 text-white">
-          <Link href="/dashboard" className="hover:text-[#F8A938] transition-colors">
-            Dashboard
-          </Link>
-          <Link href="/flashcards" className="hover:text-[#F8A938] transition-colors">
-            Study
-          </Link>
-          <Link href="/rewards" className="hover:text-[#F8A938] transition-colors">
-            Rewards
-          </Link>
-        </div>
-      </nav>
-
-      {/* Hero Section */}
-      <section className="container mx-auto px-4 py-24 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-['Poppins']">
-            Study Smarter with <span className="text-[#F8A938]">AI</span>
-          </h1>
-          <p className="text-lg md:text-xl text-[#F4F7FA] mb-4 font-['Nunito']">
-            Built for African Students. Powered by AI.
-          </p>
-          <p className="text-base text-[#F4F7FA] mb-12 max-w-2xl mx-auto font-['Nunito']">
-            Transform your notes into audiobooks, get AI-powered study plans, and compete with students across Africa.
-            Your academic success starts here.
-          </p>
-
-          <Button
-            size="lg"
-            className="bg-[#F8A938] hover:bg-[#D44713] text-black font-bold px-10 py-3 text-base rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-100 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+          Get started by editing&nbsp;
+          <code className="font-mono font-bold">app/page.tsx</code>
+        </p>
+        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+          <a
+            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Join Beta
-          </Button>
+            By <Image src="/vercel.svg" alt="Vercel Logo" className="dark:invert" width={100} height={24} priority />
+          </a>
         </div>
-      </section>
+      </div>
 
-      {/* Features Section */}
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-white text-center mb-12 font-['Poppins']">
-          Powerful Features for African Students
-        </h2>
+      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] dark:before:bg-gradient-radial dark:before:from-white dark:before:to-transparent dark:after:from-sky-800 dark:after:via-[#0141ff] dark:after:opacity-40 before:lg:h-[360px]">
+        <Image
+          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+          src="/next.svg"
+          alt="Next.js Logo"
+          width={180}
+          height={37}
+          priority
+        />
+      </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-center hover:bg-white/10 transition-all duration-300">
-            <div className="bg-[#F8A938]/20 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Headphones className="w-7 h-7 text-[#F8A938]" />
-            </div>
-            <h3 className="text-lg font-bold text-white mb-4 font-['Poppins']">Notes to Audio</h3>
-            <p className="text-white/80 font-['Nunito']">
-              Upload your notes and let AI convert them into engaging audiobooks with local accents
-            </p>
-          </Card>
+      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+        <a
+          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            Docs{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            Find in-depth information about Next.js features and API.
+          </p>
+        </a>
 
-          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-center hover:bg-white/10 transition-all duration-300">
-            <div className="bg-[#F8A938]/20 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Brain className="w-7 h-7 text-[#F8A938]" />
-            </div>
-            <h3 className="text-lg font-bold text-white mb-4 font-['Poppins']">Past Question Solutions</h3>
-            <p className="text-white/80 font-['Nunito']">
-              Get AI-powered solutions to past questions from universities across Africa
-            </p>
-          </Card>
+        <a
+          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            Learn{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          </p>
+        </a>
 
-          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-center hover:bg-white/10 transition-all duration-300">
-            <div className="bg-[#F8A938]/20 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Trophy className="w-7 h-7 text-[#F8A938]" />
-            </div>
-            <h3 className="text-lg font-bold text-white mb-4 font-['Poppins']">Gamified Study Plan</h3>
-            <p className="text-white/80 font-['Nunito']">
-              Earn XP, compete with peers, and unlock rewards as you progress through your studies
-            </p>
-          </Card>
-        </div>
-      </section>
+        <a
+          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            Templates{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            Discover and deploy boilerplate example Next.js&nbsp;projects.
+          </p>
+        </a>
 
-      {/* Why Skulwise? Section */}
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-white text-center mb-12 font-['Poppins']">
-          Why Choose Skulwise Over Others?
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-left hover:bg-white/10 transition-all duration-300">
-            <h3 className="text-xl font-bold text-white mb-4 font-['Poppins']">Tailored for African Students</h3>
-            <p className="text-white/80 font-['Nunito']">
-              Unlike generic AI tools, Skulwise is built from the ground up with the unique academic needs and cultural
-              context of African students in mind. From local accents in audio notes to past questions from African
-              universities, we understand your journey.
-            </p>
-          </Card>
-          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-left hover:bg-white/10 transition-all duration-300">
-            <h3 className="text-xl font-bold text-white mb-4 font-['Poppins']">Engaging & Gamified Learning</h3>
-            <p className="text-white/80 font-['Nunito']">
-              We go beyond simple summarization. Skulwise transforms passive learning into an active, rewarding
-              experience with gamified study plans, XP points, and competitive leaderboards, making studying fun and
-              motivating.
-            </p>
-          </Card>
-          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-left hover:bg-white/10 transition-all duration-300">
-            <h3 className="text-xl font-bold text-white mb-4 font-['Poppins']">Comprehensive Study Ecosystem</h3>
-            <p className="text-white/80 font-['Nunito']">
-              Skulwise offers a holistic approach to studying, combining AI-powered note conversion to audio, past
-              question solutions, and personalized study plans all in one platform. No need for multiple tools –
-              everything you need is here.
-            </p>
-          </Card>
-          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-left hover:bg-white/10 transition-all duration-300">
-            <h3 className="text-xl font-bold text-white mb-4 font-['Poppins']">Community & Competition</h3>
-            <p className="text-white/80 font-['Nunito']">
-              Connect with a vibrant community of African students. Compete, collaborate, and grow together, fostering a
-              supportive environment that drives academic excellence.
-            </p>
-          </Card>
-        </div>
-      </section>
-
-      {/* Student Illustrations Section */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-10 text-center">
-          <h2 className="text-2xl font-bold text-white mb-8 font-['Poppins']">Join Thousands of African Students</h2>
-          <div className="flex justify-center items-center space-x-6 mb-8">
-            <div className="flex items-center space-x-2">
-              <Users className="w-5 h-5 text-[#F8A938]" />
-              <span className="text-white font-bold text-lg font-['Inter']">10,000+</span>
-              <span className="text-[#F4F7FA] font-['Nunito']">Students</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <BookOpen className="w-5 h-5 text-[#F8A938]" />
-              <span className="text-white font-bold text-lg font-['Inter']">50,000+</span>
-              <span className="text-[#F4F7FA] font-['Nunito']">Notes Converted</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Zap className="w-5 h-5 text-[#F8A938]" />
-              <span className="text-white font-bold text-lg font-['Inter']">1M+</span>
-              <span className="text-[#F4F7FA] font-['Nunito']">XP Earned</span>
-            </div>
-          </div>
-          <Button
-            size="lg"
-            className="bg-[#D44713] hover:bg-[#F8A938] text-white font-bold px-6 py-2.5 text-base rounded-full"
-          >
-            Start Your Journey
-          </Button>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="container mx-auto px-4 py-6 text-center text-white/70 border-t border-white/20">
-        <p className="font-['Nunito']">© 2024 Skulwise. Built for African Students. Powered by AI.</p>
-      </footer>
-    </div>
+        <a
+          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            Deploy{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            Instantly deploy your Next.js site to a shareable URL with&nbsp;Vercel.
+          </p>
+        </a>
+      </div>
+      <div>
+        <h2>Why Choose Skulwise Over Others?</h2>
+        <p className="text-base text-[#0A2D58]/70 mb-8 font-['Nunito']">
+          Skulwise is built specifically for the African student, addressing unique educational needs and challenges.
+          Here's how we stand out:
+        </p>
+      </div>
+    </main>
   )
 }

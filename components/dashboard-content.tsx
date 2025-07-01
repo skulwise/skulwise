@@ -31,10 +31,16 @@ export default function DashboardContent() {
   const { isOnline, addOfflineAction } = useOfflineStorage()
 
   const todayTasks = [
-    { id: 1, subject: "Mathematics", topic: "Calculus Review", duration: "30 min", completed: false },
-    { id: 2, subject: "Chemistry", topic: "Organic Compounds", duration: "45 min", completed: true },
-    { id: 3, subject: "Physics", topic: "Wave Motion", duration: "25 min", completed: false },
-    { id: 4, subject: "Biology", topic: "Cell Division", duration: "35 min", completed: false },
+    { id: 1, subject: "Mathematics", topic: "Algebraic Equations", duration: "30 min", completed: false },
+    { id: 2, subject: "History", topic: "Pre-Colonial African Kingdoms", duration: "45 min", completed: true },
+    { id: 3, subject: "Physics", topic: "Newtonian Mechanics", duration: "25 min", completed: false },
+    {
+      id: 4,
+      subject: "Literature",
+      topic: "Chinua Achebe's 'Things Fall Apart'",
+      duration: "35 min",
+      completed: false,
+    },
   ]
 
   const weeklyProgress = [

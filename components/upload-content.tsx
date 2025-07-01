@@ -97,7 +97,8 @@ export default function UploadContent() {
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-[#0A2D58] mb-4 font-['Poppins']">Notes to Audiobook</h1>
           <p className="text-base text-[#0A2D58]/70 font-['Nunito']">
-            Upload your notes and let AI convert them into engaging audiobooks
+            Upload your notes and let AI convert them into engaging audiobooks, making learning accessible and
+            enjoyable.
           </p>
         </div>
 
