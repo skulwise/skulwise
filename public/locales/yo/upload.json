@@ -1,0 +1,52 @@
+{
+  "page_title": "Upload Your Study Notes",
+  "page_subtitle": "Transform your notes into powerful learning tools. Upload text files, paste content, or record voice notes to get started.",
+  "form": {
+    "drag_drop_area": "Drop your files here or click to browse",
+    "supported_formats": "Supports .txt, .md, .doc, .docx files",
+    "paste_label": "Or paste your notes here:",
+    "paste_placeholder": "Paste your study notes here...",
+    "recording_button_start": "Start Recording",
+    "recording_button_stop": "Stop Recording",
+    "recording_active": "Recording... Click the microphone to stop",
+    "process_button": "Process Notes",
+    "processing": "Processing Notes..."
+  },
+  "benefits": {
+    "heading": "What You'll Get",
+    "ai_summary": {
+      "title": "AI Summary",
+      "description": "Get a concise summary of your notes highlighting the most important concepts."
+    },
+    "audio_version": {
+      "title": "Audio Version",
+      "description": "Listen to your notes as high-quality audio for learning on-the-go."
+    },
+    "flashcards": {
+      "title": "Flashcards",
+      "description": "Auto-generated flashcards to test your knowledge and reinforce learning."
+    }
+  },
+  "results": {
+    "title": "Processing Complete!",
+    "subtitle": "Your notes have been transformed into powerful study materials.",
+    "ai_summary_title": "AI Summary",
+    "key_points_title": "Key Points",
+    "audio_summary_title": "Audio Summary",
+    "audio_description": "Listen to your notes as natural-sounding audio. Perfect for reviewing while commuting or exercising.",
+    "play_audio": "Play Audio Summary",
+    "flashcards_title": "Generated Flashcards ({{count}})",
+    "flashcards_description": "We've created {{count}} flashcards from your notes to help reinforce your learning.",
+    "flashcards_preview": "Preview:",
+    "study_flashcards": "Study with Flashcards",
+    "process_more": "Process More Notes",
+    "go_to_dashboard": "Go to Dashboard",
+    "xp_earned": "🎉 +{{xp}} XP earned for processing notes!"
+  },
+  "errors": {
+    "file_type_not_supported": "Please upload a text file (.txt, .md, etc.)",
+    "microphone_access_denied": "Error accessing microphone. Please check permissions.",
+    "processing_failed": "Failed to process notes. Please try again.",
+    "audio_play_failed": "Failed to play audio"
+  }
+}

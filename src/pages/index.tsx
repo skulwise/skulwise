@@ -1,10 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
+import { GetStaticProps } from 'next';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Brain, BookOpen, Headphones, Trophy, Upload, Play, ArrowRight } from 'lucide-react';
 
 export default function HomePage() {
+  const { t } = useTranslation(['landing', 'navigation', 'common']);
+  
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
@@ -15,28 +20,27 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6">
-              Transform Your Study Notes with
-              <span className="text-transparent bg-clip-text skulwise-gradient"> AI</span>
+              {t('landing:hero.title')}
+              <span className="text-transparent bg-clip-text skulwise-gradient">{t('landing:hero.title_ai')}</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Convert your notes into engaging audio content and interactive flashcards. 
-              Learn smarter with AI-powered study tools that adapt to your learning style.
+              {t('landing:hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/upload"
-                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center"
-              >
-                <Upload className="mr-2" size={20} />
-                Start Learning Now
-              </Link>
-              <Link
-                href="/dashboard"
-                className="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"
-              >
-                <Play className="mr-2" size={20} />
-                View Demo
-              </Link>
+                              <Link
+                  href="/upload"
+                  className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center"
+                >
+                  <Upload className="mr-2" size={20} />
+                  {t('landing:hero.cta_primary')}
+                </Link>
+                <Link
+                  href="/dashboard"
+                  className="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"
+                >
+                  <Play className="mr-2" size={20} />
+                  {t('landing:hero.cta_secondary')}
+                </Link>
             </div>
           </div>
         </div>
@@ -187,3 +191,15 @@ export default function HomePage() {
     </div>
   );
 }
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'en', [
+        'common',
+        'navigation',
+        'landing',
+      ])),
+    },
+  };
+};

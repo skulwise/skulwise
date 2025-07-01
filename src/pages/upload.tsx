@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
+import { GetStaticProps } from 'next';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import UploadNoteForm from '../components/UploadNoteForm';
@@ -9,6 +12,7 @@ export default function UploadPage() {
   const [processingResult, setProcessingResult] = useState<any>(null);
   const [showResults, setShowResults] = useState(false);
   const router = useRouter();
+  const { t } = useTranslation(['upload', 'navigation', 'common']);
 
   const handleUploadSuccess = (data: any) => {
     setProcessingResult(data);
@@ -44,11 +48,10 @@ export default function UploadPage() {
             {/* Header */}
             <div className="text-center mb-12">
               <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                Upload Your Study Notes
+                {t('upload:page_title')}
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Transform your notes into powerful learning tools. Upload text files, 
-                paste content, or record voice notes to get started.
+                {t('upload:page_subtitle')}
               </p>
             </div>
 
@@ -220,3 +223,15 @@ export default function UploadPage() {
     </div>
   );
 }
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'en', [
+        'common',
+        'navigation',
+        'upload',
+      ])),
+    },
+  };
+};

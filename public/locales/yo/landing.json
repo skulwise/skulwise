@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "title": "Yi awọn akọsilẹ ikẹkọ rẹ pada pẹlu",
+    "title_ai": " AI",
+    "subtitle": "Yi awọn akọsilẹ rẹ pada si akoonu ohun alagbedu ati awọn kaadi idaniloju. Kọ ẹkọ ni ọgbọn pẹlu awọn ohun elo ikẹkọ AI ti o ni anfani si ọna ikẹkọ rẹ.",
+    "cta_primary": "Bẹrẹ kikẹkọ bayi",
+    "cta_secondary": "Wo Afihan"
+  },
+  "features": {
+    "heading": "Awọn ẹya agbara fun ikẹkọ ode oni",
+    "subtitle": "Skulwise ṣe apapo imọ-ẹrọ AI ti o ti gaju pẹlu awọn ọna ikẹkọ ti a ti ṣe idaniloju lati ṣẹda alabaṣiṣẹpọ ikẹkọ ti o ga julọ.",
+    "ai_summarization": {
+      "title": "Ṣoki AI",
+      "description": "Yi awọn akọsilẹ gigun pada si awọn ṣoki kukuru ti o le loye nipa lilo imọ-ẹrọ AI to ga."
+    },
+    "audio_learning": {
+      "title": "Kikẹkọ Ohun",
+      "description": "Yi awọn akọsilẹ rẹ pada si ohun didara giga fun kikẹkọ ni ọna-irin, lakoko irin-ajo, tabi adaṣe ara."
+    },
+    "smart_flashcards": {
+      "title": "Awọn Kaadi Ọgbọn",
+      "description": "Awọn kaadi ti a ṣe laifọwọyi lati awọn akọsilẹ rẹ lati fun ikẹkọ nipasẹ iranti iṣe."
+    },
+    "reward_system": {
+      "title": "Eto Ẹbun",
+      "description": "Duro ni irugbamu pẹlu awọn aaye XP, awọn aṣeyọri, ati awọn ṣiṣan ti o jẹ ki kikẹkọ di ohun afẹ."
+    }
+  },
+  "how_it_works": {
+    "heading": "Bii Skulwise ṣe n ṣiṣẹ",
+    "subtitle": "Bibẹrẹ pẹlu kikẹkọ ti AI ṣe amuṣe jẹ rọrun ati ohun ti o ye ni.",
+    "step_1": {
+      "title": "Gbe awọn akọsilẹ rẹ soke",
+      "description": "Gbe awọn faili ọrọ soke, lẹ akoonu, tabi paapaa gbasilẹ awọn akọsilẹ ohun. Skulwise gba awọn ọna pupọ fun irọrun ti o pọju."
+    },
+    "step_2": {
+      "title": "Sisẹ AI",
+      "description": "AI wa ṣe itupalẹ akoonu rẹ, ṣẹda awọn ṣoki, ṣe awọn kaadi, ki o si yi ọrọ pada si ohun adayeba."
+    },
+    "step_3": {
+      "title": "Kọ ẹkọ ki o si gba",
+      "description": "Kọ ẹkọ pẹlu awọn kaadi idaniloju, tẹtisi awọn ṣoki ohun, ki o si gba XP ati awọn aṣeyọri bi o ti nlọsiwaju."
+    }
+  },
+  "cta": {
+    "heading": "Ṣe o ti ṣetan lati yi ikẹkọ rẹ pada?",
+    "subtitle": "Darapọ mọ awọn ẹgbẹẹgbẹrun ọmọ ile-iwe ti o ti nlọ ọgbọn pẹlu Skulwise. Bẹrẹ irin-ajo ikẹkọ AI rẹ loni.",
+    "cta_primary": "Bẹrẹ lọfẹ",
+    "cta_secondary": "Ṣawari awọn ẹya"
+  }
+}

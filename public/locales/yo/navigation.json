@@ -1,0 +1,31 @@
+{
+  "home": "Ile",
+  "dashboard": "Oju-iṣe",
+  "upload": "Gbe soke",
+  "flashcards": "Awọn kaadi",
+  "rewards": "Awọn ẹbun",
+  "profile": "Profaili",
+  "settings": "Awọn eto",
+  "help": "Iranlọwọ",
+  "about": "Nipa",
+  "contact": "Olubasọrọ",
+  "logout": "Jade",
+  "menu": "Akojọ aṣayan",
+  "close_menu": "Ti akojọ aṣayan",
+  "user_menu": "Akojọ aṣayan olumulo",
+  "language_selector": "Aṣayan ede",
+  "breadcrumb_home": "Ile",
+  "breadcrumb_separator": "/",
+  "footer": {
+    "product": "Ọja",
+    "support": "Atilẹyin",
+    "help_center": "Ile-iṣẹ iranlọwọ",
+    "contact_us": "Kan si wa",
+    "privacy_policy": "Imulo aṣiri",
+    "terms_of_service": "Awọn ipo iṣẹ",
+    "copyright": "© 2024 Skulwise. Gbogbo ẹtọ wa ni aabo.",
+    "made_with": "Ti a ṣe pẹlu",
+    "for_students": "fun awọn ọmọ ile-iwe ni gbogbo ibikọja",
+    "description": "Yi awọn akọsilẹ ẹkọ rẹ pada si akoonu ohun alagbedu ati awọn kaadi idaniloju. Kọ ẹkọ ni ọgbọn pẹlu awọn ohun elo ẹkọ ti AI."
+  }
+}

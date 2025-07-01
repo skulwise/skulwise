@@ -1,24 +1,28 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
 import { Book, Home, Upload, CreditCard, Trophy, User } from 'lucide-react';
+import LanguageSelector from './LanguageSelector';
 
 interface NavItem {
   name: string;
   href: string;
   icon: React.ReactNode;
+  translationKey: string;
 }
-
-const navItems: NavItem[] = [
-  { name: 'Home', href: '/', icon: <Home size={20} /> },
-  { name: 'Dashboard', href: '/dashboard', icon: <Book size={20} /> },
-  { name: 'Upload', href: '/upload', icon: <Upload size={20} /> },
-  { name: 'Flashcards', href: '/flashcards', icon: <CreditCard size={20} /> },
-  { name: 'Rewards', href: '/rewards', icon: <Trophy size={20} /> },
-];
 
 export default function Navbar() {
   const router = useRouter();
+  const { t } = useTranslation('navigation');
+
+  const navItems: NavItem[] = [
+    { name: t('home'), href: '/', icon: <Home size={20} />, translationKey: 'home' },
+    { name: t('dashboard'), href: '/dashboard', icon: <Book size={20} />, translationKey: 'dashboard' },
+    { name: t('upload'), href: '/upload', icon: <Upload size={20} />, translationKey: 'upload' },
+    { name: t('flashcards'), href: '/flashcards', icon: <CreditCard size={20} />, translationKey: 'flashcards' },
+    { name: t('rewards'), href: '/rewards', icon: <Trophy size={20} />, translationKey: 'rewards' },
+  ];
 
   return (
     <nav className="bg-white shadow-lg border-b border-gray-200">
@@ -30,7 +34,7 @@ export default function Navbar() {
               <div className="w-8 h-8 skulwise-gradient rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">S</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">Skulwise</span>
+              <span className="text-xl font-bold text-gray-900">{t('app_name', 'Skulwise')}</span>
             </Link>
           </div>
 
@@ -55,8 +59,9 @@ export default function Navbar() {
             })}
           </div>
 
-          {/* User Menu */}
-          <div className="flex items-center">
+          {/* Language Selector & User Menu */}
+          <div className="flex items-center space-x-4">
+            <LanguageSelector />
             <button className="p-2 rounded-full text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">
               <User size={20} />
             </button>

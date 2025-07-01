@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "title": "Transform Your Study Notes with",
+    "title_ai": " AI",
+    "subtitle": "Convert your notes into engaging audio content and interactive flashcards. Learn smarter with AI-powered study tools that adapt to your learning style.",
+    "cta_primary": "Start Learning Now",
+    "cta_secondary": "View Demo"
+  },
+  "features": {
+    "heading": "Powerful Features for Modern Learning",
+    "subtitle": "Skulwise combines cutting-edge AI technology with proven learning methods to create the ultimate study companion.",
+    "ai_summarization": {
+      "title": "AI Summarization",
+      "description": "Transform lengthy notes into concise, digestible summaries using advanced AI technology."
+    },
+    "audio_learning": {
+      "title": "Audio Learning",
+      "description": "Convert your notes to high-quality audio for learning on-the-go, during commutes, or workouts."
+    },
+    "smart_flashcards": {
+      "title": "Smart Flashcards",
+      "description": "Auto-generated flashcards from your notes to reinforce learning through active recall."
+    },
+    "reward_system": {
+      "title": "Reward System",
+      "description": "Stay motivated with XP points, achievements, and streaks that make learning addictive."
+    }
+  },
+  "how_it_works": {
+    "heading": "How Skulwise Works",
+    "subtitle": "Getting started with AI-powered learning is simple and intuitive.",
+    "step_1": {
+      "title": "Upload Your Notes",
+      "description": "Upload text files, paste content, or even record voice notes. Skulwise accepts multiple formats for maximum flexibility."
+    },
+    "step_2": {
+      "title": "AI Processing",
+      "description": "Our AI analyzes your content, creates summaries, generates flashcards, and converts text to natural-sounding audio."
+    },
+    "step_3": {
+      "title": "Learn & Earn",
+      "description": "Study with interactive flashcards, listen to audio summaries, and earn XP and achievements as you progress."
+    }
+  },
+  "cta": {
+    "heading": "Ready to Transform Your Learning?",
+    "subtitle": "Join thousands of students who are already learning smarter with Skulwise. Start your AI-powered study journey today.",
+    "cta_primary": "Get Started Free",
+    "cta_secondary": "Explore Features"
+  }
+}

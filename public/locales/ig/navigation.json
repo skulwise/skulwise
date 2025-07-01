@@ -1,0 +1,31 @@
+{
+  "home": "Ụlọ",
+  "dashboard": "Dashbọd",
+  "upload": "Bulite",
+  "flashcards": "Kaadị ọsọ",
+  "rewards": "Ụgwọ ọrụ",
+  "profile": "Profaịlụ",
+  "settings": "Nhazi",
+  "help": "Enyemaka",
+  "about": "Banyere",
+  "contact": "Kpọtụrụ",
+  "logout": "Pụọ",
+  "menu": "Menu",
+  "close_menu": "Mechie menu",
+  "user_menu": "Menu onye ọrụ",
+  "language_selector": "Nhọrọ asụsụ",
+  "breadcrumb_home": "Ụlọ",
+  "breadcrumb_separator": "/",
+  "footer": {
+    "product": "Ngwaahịa",
+    "support": "Nkwado",
+    "help_center": "Ebe enyemaka",
+    "contact_us": "Kpọtụrụ anyị",
+    "privacy_policy": "Iwu nzuzo",
+    "terms_of_service": "Usoro ọrụ",
+    "copyright": "© 2024 Skulwise. Ikike niile echekwara.",
+    "made_with": "Ejiri",
+    "for_students": "maka ụmụ akwụkwọ ebe niile",
+    "description": "Gbanwee ndetu ọmụmụ gị ka ọ bụrụ ọdịnaya ụda na-adọrọ mmasị na kaadị ọsọ mmekọrịta. Mụta nke ọma site na ngwa ọmụmụ AI."
+  }
+}

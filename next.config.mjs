@@ -1,5 +1,8 @@
+const { i18n } = require('./next-i18next.config.js');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  i18n,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -9,6 +12,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  
+  // Enable experimental features for i18n
+  experimental: {
+    esmExternals: false,
+  },
 }
 
-export default nextConfig
+module.exports = nextConfig;

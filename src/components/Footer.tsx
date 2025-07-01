@@ -1,8 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 import { Heart, Github, Twitter, Mail } from 'lucide-react';
 
 export default function Footer() {
+  const { t } = useTranslation('navigation');
+  
   return (
     <footer className="bg-gray-50 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -13,12 +16,11 @@ export default function Footer() {
               <div className="w-8 h-8 skulwise-gradient rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">S</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">Skulwise</span>
+                              <span className="text-xl font-bold text-gray-900">{t('app_name', 'Skulwise')}</span>
             </div>
-            <p className="text-gray-600 mb-4 max-w-md">
-              Transform your study notes into engaging audio content and interactive flashcards. 
-              Learn smarter, not harder with AI-powered study tools.
-            </p>
+                          <p className="text-gray-600 mb-4 max-w-md">
+                {t('footer.description')}
+              </p>
             <div className="flex space-x-4">
               <a 
                 href="#" 

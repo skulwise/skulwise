@@ -1,0 +1,31 @@
+{
+  "home": "Home",
+  "dashboard": "Dashboard",
+  "upload": "Upload",
+  "flashcards": "Flashcards",
+  "rewards": "Rewards",
+  "profile": "Profile",
+  "settings": "Settings",
+  "help": "Help",
+  "about": "About",
+  "contact": "Contact",
+  "logout": "Logout",
+  "menu": "Menu",
+  "close_menu": "Close Menu",
+  "user_menu": "User Menu",
+  "language_selector": "Language Selector",
+  "breadcrumb_home": "Home",
+  "breadcrumb_separator": "/",
+  "footer": {
+    "product": "Product",
+    "support": "Support",
+    "help_center": "Help Center",
+    "contact_us": "Contact Us",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service",
+    "copyright": "© 2024 Skulwise. All rights reserved.",
+    "made_with": "Made with",
+    "for_students": "for students everywhere",
+    "description": "Transform your study notes into engaging audio content and interactive flashcards. Learn smarter, not harder with AI-powered study tools."
+  }
+}

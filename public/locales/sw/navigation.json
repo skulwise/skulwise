@@ -1,0 +1,31 @@
+{
+  "home": "Nyumbani",
+  "dashboard": "Dashibodi",
+  "upload": "Pakia",
+  "flashcards": "Kadi za haraka",
+  "rewards": "Tuzo",
+  "profile": "Wasifu",
+  "settings": "Mipangilio",
+  "help": "Msaada",
+  "about": "Kuhusu",
+  "contact": "Wasiliana",
+  "logout": "Toka",
+  "menu": "Menyu",
+  "close_menu": "Funga menyu",
+  "user_menu": "Menyu ya mtumiaji",
+  "language_selector": "Chaguo la lugha",
+  "breadcrumb_home": "Nyumbani",
+  "breadcrumb_separator": "/",
+  "footer": {
+    "product": "Bidhaa",
+    "support": "Msaada",
+    "help_center": "Kituo cha msaada",
+    "contact_us": "Wasiliana nasi",
+    "privacy_policy": "Sera ya faragha",
+    "terms_of_service": "Masharti ya huduma",
+    "copyright": "© 2024 Skulwise. Haki zote zimehifadhiwa.",
+    "made_with": "Imetengenezwa kwa",
+    "for_students": "kwa wanafunzi kote ulimwenguni",
+    "description": "Badilisha maelezo yako ya masomo kuwa maudhui ya sauti ya kuvutia na kadi za haraka za maingiliano. Jifunze kwa akili zaidi kwa zana za kujifunza za AI."
+  }
+}
