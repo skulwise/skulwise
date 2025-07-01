@@ -1,167 +1,187 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { BookOpen, Headphones, Trophy, Brain, Users, Zap } from "lucide-react"
+import Link from 'next/link';
+import { Brain, Upload, Headphones, CreditCard, Trophy, ArrowRight, CheckCircle } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Navbar from '@/src/components/Navbar';
+import Footer from '@/src/components/Footer';
 
-export default function LandingPage() {
+export default function Home() {
+  const features = [
+    {
+      icon: Upload,
+      title: 'Upload Your Notes',
+      description: 'Simply upload your study notes or lecture transcripts in any format.',
+      color: 'bg-blue-50 text-blue-600',
+    },
+    {
+      icon: Brain,
+      title: 'AI-Powered Summarization',
+      description: 'Our AI extracts key points and creates concise summaries for efficient studying.',
+      color: 'bg-purple-50 text-purple-600',
+    },
+    {
+      icon: Headphones,
+      title: 'Convert to Audio',
+      description: 'Transform your notes into natural-sounding audio for hands-free learning.',
+      color: 'bg-green-50 text-green-600',
+    },
+    {
+      icon: CreditCard,
+      title: 'Smart Flashcards',
+      description: 'Automatically generated flashcards with adaptive difficulty levels.',
+      color: 'bg-orange-50 text-orange-600',
+    },
+    {
+      icon: Trophy,
+      title: 'Gamified Learning',
+      description: 'Earn points, maintain streaks, and unlock achievements as you study.',
+      color: 'bg-yellow-50 text-yellow-600',
+    },
+  ];
+
+  const benefits = [
+    'Save hours of manual note organization',
+    'Improve retention with multi-modal learning',
+    'Study anywhere with audio content',
+    'Track your progress and stay motivated',
+    'Adaptive learning based on your performance',
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0059C2] via-[#0A2D58] to-[#0059C2]">
-      {/* Navigation */}
-      <nav className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <div className="flex items-center space-x-3">
-          <Image src="/skulwise-logo.png" alt="Skulwise Logo" width={50} height={50} className="rounded-lg" />
-          <span className="text-white font-bold text-xl font-['Montserrat']">Skulwise</span>
-        </div>
-        <div className="hidden md:flex space-x-6 text-white">
-          <Link href="/dashboard" className="hover:text-[#F8A938] transition-colors">
-            Dashboard
-          </Link>
-          <Link href="/flashcards" className="hover:text-[#F8A938] transition-colors">
-            Study
-          </Link>
-          <Link href="/rewards" className="hover:text-[#F8A938] transition-colors">
-            Rewards
-          </Link>
-        </div>
-      </nav>
+    <div className="min-h-screen bg-gray-50">
+      <Navbar />
 
-      {/* Hero Section */}
-      <section className="container mx-auto px-4 py-24 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-['Poppins']">
-            Study Smarter with <span className="text-[#F8A938]">AI</span>
-          </h1>
-          <p className="text-lg md:text-xl text-[#F4F7FA] mb-4 font-['Nunito']">
-            Built for African Students. Powered by AI.
-          </p>
-          <p className="text-base text-[#F4F7FA] mb-12 max-w-2xl mx-auto font-['Nunito']">
-            Transform your notes into audiobooks, get AI-powered study plans, and compete with students across Africa.
-            Your academic success starts here.
-          </p>
-
-          <Button
-            size="lg"
-            className="bg-[#F8A938] hover:bg-[#D44713] text-black font-bold px-10 py-3 text-base rounded-full shadow-lg transform hover:scale-105 transition-all duration-200"
-          >
-            Join Beta
-          </Button>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-white text-center mb-12 font-['Poppins']">
-          Powerful Features for African Students
-        </h2>
-
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-center hover:bg-white/10 transition-all duration-300">
-            <div className="bg-[#F8A938]/20 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Headphones className="w-7 h-7 text-[#F8A938]" />
+        <main>
+          {/* Hero Section */}
+          <section className="relative bg-gradient-to-br from-indigo-50 via-white to-cyan-50 py-20 lg:py-32">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center">
+                <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-8">
+                  Transform Your Study Notes with
+                  <span className="text-indigo-600 block">AI-Powered Learning</span>
+                </h1>
+                
+                <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                  Upload your notes, get AI summaries, convert to audio, and create smart flashcards. 
+                  Make studying more efficient and engaging with Skulwise.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button asChild size="lg" className="px-8 py-3 text-lg">
+                    <Link href="/upload">
+                      Get Started Free
+                      <ArrowRight className="w-5 h-5 ml-2" />
+                    </Link>
+                  </Button>
+                  
+                  <Button variant="outline" size="lg" className="px-8 py-3 text-lg" asChild>
+                    <Link href="/dashboard">
+                      View Dashboard
+                    </Link>
+                  </Button>
+                </div>
+              </div>
             </div>
-            <h3 className="text-lg font-bold text-white mb-4 font-['Poppins']">Notes to Audio</h3>
-            <p className="text-white/80 font-['Nunito']">
-              Upload your notes and let AI convert them into engaging audiobooks with local accents
-            </p>
-          </Card>
+          </section>
 
-          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-center hover:bg-white/10 transition-all duration-300">
-            <div className="bg-[#F8A938]/20 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Brain className="w-7 h-7 text-[#F8A938]" />
+          {/* Features Section */}
+          <section className="py-20 bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  How Skulwise Works
+                </h2>
+                <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                  A simple, powerful workflow that transforms your study materials into an engaging learning experience.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {features.map((feature, index) => {
+                  const Icon = feature.icon;
+                  return (
+                    <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                      <CardHeader>
+                        <div className={`w-12 h-12 rounded-lg ${feature.color} flex items-center justify-center mb-4`}>
+                          <Icon className="w-6 h-6" />
+                        </div>
+                        <CardTitle className="text-xl font-bold text-gray-900">
+                          {feature.title}
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-gray-600">{feature.description}</p>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              </div>
             </div>
-            <h3 className="text-lg font-bold text-white mb-4 font-['Poppins']">Past Question Solutions</h3>
-            <p className="text-white/80 font-['Nunito']">
-              Get AI-powered solutions to past questions from universities across Africa
-            </p>
-          </Card>
+          </section>
 
-          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-center hover:bg-white/10 transition-all duration-300">
-            <div className="bg-[#F8A938]/20 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Trophy className="w-7 h-7 text-[#F8A938]" />
+          {/* Benefits Section */}
+          <section className="py-20 bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Why Choose Skulwise?
+                  </h2>
+                  <p className="text-lg text-gray-600 mb-8">
+                    Traditional studying methods can be time-consuming and ineffective. 
+                    Skulwise leverages AI to create personalized learning experiences that adapt to your needs.
+                  </p>
+                  
+                  <ul className="space-y-4">
+                    {benefits.map((benefit, index) => (
+                      <li key={index} className="flex items-start space-x-3">
+                        <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                        <span className="text-gray-700">{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div className="bg-white rounded-2xl p-8 shadow-xl">
+                  <div className="text-center">
+                    <Brain className="w-20 h-20 text-indigo-600 mx-auto mb-6" />
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                      Ready to Transform Your Learning?
+                    </h3>
+                    <p className="text-gray-600 mb-6">
+                      Join thousands of students who have revolutionized their study habits with Skulwise.
+                    </p>
+                    <Button asChild size="lg" className="w-full">
+                      <Link href="/upload">
+                        Start Learning Smarter
+                        <ArrowRight className="w-5 h-5 ml-2" />
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3 className="text-lg font-bold text-white mb-4 font-['Poppins']">Gamified Study Plan</h3>
-            <p className="text-white/80 font-['Nunito']">
-              Earn XP, compete with peers, and unlock rewards as you progress through your studies
-            </p>
-          </Card>
-        </div>
-      </section>
+          </section>
 
-      {/* Why Skulwise? Section */}
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-white text-center mb-12 font-['Poppins']">
-          Why Choose Skulwise Over Others?
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-left hover:bg-white/10 transition-all duration-300">
-            <h3 className="text-xl font-bold text-white mb-4 font-['Poppins']">Tailored for African Students</h3>
-            <p className="text-white/80 font-['Nunito']">
-              Unlike generic AI tools, Skulwise is built from the ground up with the unique academic needs and cultural
-              context of African students in mind. From local accents in audio notes to past questions from African
-              universities, we understand your journey.
-            </p>
-          </Card>
-          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-left hover:bg-white/10 transition-all duration-300">
-            <h3 className="text-xl font-bold text-white mb-4 font-['Poppins']">Engaging & Gamified Learning</h3>
-            <p className="text-white/80 font-['Nunito']">
-              We go beyond simple summarization. Skulwise transforms passive learning into an active, rewarding
-              experience with gamified study plans, XP points, and competitive leaderboards, making studying fun and
-              motivating.
-            </p>
-          </Card>
-          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-left hover:bg-white/10 transition-all duration-300">
-            <h3 className="text-xl font-bold text-white mb-4 font-['Poppins']">Comprehensive Study Ecosystem</h3>
-            <p className="text-white/80 font-['Nunito']">
-              Skulwise offers a holistic approach to studying, combining AI-powered note conversion to audio, past
-              question solutions, and personalized study plans all in one platform. No need for multiple tools –
-              everything you need is here.
-            </p>
-          </Card>
-          <Card className="bg-white/5 border border-white/10 rounded-xl shadow-lg p-8 text-left hover:bg-white/10 transition-all duration-300">
-            <h3 className="text-xl font-bold text-white mb-4 font-['Poppins']">Community & Competition</h3>
-            <p className="text-white/80 font-['Nunito']">
-              Connect with a vibrant community of African students. Compete, collaborate, and grow together, fostering a
-              supportive environment that drives academic excellence.
-            </p>
-          </Card>
-        </div>
-      </section>
+          {/* CTA Section */}
+          <section className="py-20 bg-indigo-600">
+            <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                Ready to Revolutionize Your Study Routine?
+              </h2>
+              <p className="text-xl text-indigo-100 mb-8">
+                Upload your first set of notes and experience the power of AI-enhanced learning.
+              </p>
+              <Button asChild size="lg" variant="secondary" className="px-8 py-3 text-lg">
+                <Link href="/upload">
+                  Get Started Now - It's Free
+                </Link>
+              </Button>
+            </div>
+          </section>
+        </main>
 
-      {/* Student Illustrations Section */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-10 text-center">
-          <h2 className="text-2xl font-bold text-white mb-8 font-['Poppins']">Join Thousands of African Students</h2>
-          <div className="flex justify-center items-center space-x-6 mb-8">
-            <div className="flex items-center space-x-2">
-              <Users className="w-5 h-5 text-[#F8A938]" />
-              <span className="text-white font-bold text-lg font-['Inter']">10,000+</span>
-              <span className="text-[#F4F7FA] font-['Nunito']">Students</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <BookOpen className="w-5 h-5 text-[#F8A938]" />
-              <span className="text-white font-bold text-lg font-['Inter']">50,000+</span>
-              <span className="text-[#F4F7FA] font-['Nunito']">Notes Converted</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Zap className="w-5 h-5 text-[#F8A938]" />
-              <span className="text-white font-bold text-lg font-['Inter']">1M+</span>
-              <span className="text-[#F4F7FA] font-['Nunito']">XP Earned</span>
-            </div>
-          </div>
-          <Button
-            size="lg"
-            className="bg-[#D44713] hover:bg-[#F8A938] text-white font-bold px-6 py-2.5 text-base rounded-full"
-          >
-            Start Your Journey
-          </Button>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="container mx-auto px-4 py-6 text-center text-white/70 border-t border-white/20">
-        <p className="font-['Nunito']">© 2024 Skulwise. Built for African Students. Powered by AI.</p>
-      </footer>
-    </div>
-  )
-}
+        <Footer />
+      </div>
+    );
+  }

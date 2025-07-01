@@ -202,7 +202,7 @@ export default function FlashcardsContent() {
         <div className="flex justify-center space-x-4 mb-8">
           <Button
             variant="outline"
-            size="md"
+            size="default"
             onClick={() => handleCardAction("review")}
             className="border-[#D44713] text-[#D44713] hover:bg-[#D44713] hover:text-white px-6"
             disabled={!isFlipped}
@@ -212,7 +212,7 @@ export default function FlashcardsContent() {
           </Button>
 
           <Button
-            size="md"
+            size="default"
             onClick={() => handleCardAction("got-it")}
             className="bg-[#0059C2] hover:bg-[#0A2D58] text-white px-6"
             disabled={!isFlipped}
